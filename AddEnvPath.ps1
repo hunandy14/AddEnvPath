@@ -1,6 +1,6 @@
 # 新增環境變數
 $__EnvPath_Default__ = $Env:Path
-function Add-EnvPath {
+function AddEnvPath {
     [CmdletBinding(DefaultParameterSetName = "A")]
     param(
         [Parameter(Position = 0, ParameterSetName = "A")]
@@ -32,4 +32,4 @@ function Add-EnvPath {
             Write-Host "  [$idx] $_" -ForegroundColor:Yellow
         }
     }
-} # Add-EnvPath "C:\Program Files\TeraCopy"
+} # AddEnvPath "C:\Program Files\TeraCopy"
